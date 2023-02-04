@@ -57,3 +57,26 @@ const mynumber = getmax(599, 8774, 44)
 
 
 console.log(mynumber)
+
+
+// Find max number from array
+
+function maxNumber(numbersArray){
+
+  let largest = numbersArray[0]
+for(let i = 0; i<numbersArray.length; i++){
+  let element = numbersArray[i];
+  let index = i;
+  console.log(index, element)
+  if(element>largest){
+    largest = element;
+  }
+}
+return largest;
+
+}
+
+const tallestArray = [49, 959, 59, 0233,]
+const tallest = maxNumber(tallestArray)
+console.log('max number is ', tallest)
+
